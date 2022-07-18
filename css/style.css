@@ -115,6 +115,7 @@ footer{
     width: 100%;
     background-color: rgba(161, 5, 31);
 }
+/*-------------------- CLASS --------------------*/
 .divPrincipal{
     display: flex;
     flex-flow: column wrap;
@@ -205,6 +206,7 @@ footer{
     padding: 1em;
     margin: 1em;
 }
+/* -------------------- MEDIA QUERIES --------------------*/
 @media screen and (max-width: 1024px) {
     header{
         grid-template-columns: 1fr 2fr;
