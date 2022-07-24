@@ -4,82 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>TROGLIA</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../img/iconoTrogliaPng.png" class="iconoPrincipal" alt="icono logotipo TROGLIA"></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="../pages/staff.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/historia.html">Historia</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/iconoTrogliaPng.png" class="iconoPrincipal" alt="icono logotipo TROGLIA"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="../img/iconos/menu.png" alt="menu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="staff.html">Nosotros</a>
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <div class="divPrincipal">
             <h1 class="cardPrincipal">Nos gustaría saber de vos</h1>
         </div>
-        <article class="mainQuest">
-            <form class="cardQuest" action="#">
-                <label class="cardQuest" for="firstName">Nombre
-                    <input type="text" placeholder="Haga click aqui para escribir"><br>
+        <div class="formulario">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejá tu comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Cómo llegaste a nosotros?</option>
+                <option value="1">Publicidad</option>
+                <option value="2">Busqueda Web</option>
+                <option value="3">Redes Sociales</option>
+            </select>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Quiero recibir el Newsletter
                 </label>
-                <label class="cardQuest" for="email">E-mail:
-                    <input type="email" placeholder="example@mail.com" name="email"><br>
-                </label>
-                <label class="cardQuest" for="Observaciones"> Escríbenos:<br>
-                    <textarea placeholder="Dejá tu comentario aqui"></textarea>
-                </label> <br>
-                <input type="number" placeholder="Edad"><br>
-                <div><p class="cardQuest">¿Qué te parece nuestra página?:</p>
-                    <div>Excelente
-                        <input type="radio" name="lado" value="Excelente">
-                    </div>
-                    <div>Buena
-                        <input type="radio" name="lado" value="Buena">
-                    </div>
-                    <div>Insuficiente
-                        <input type="radio" name="lado" value="Insuficiente">
-                    </div>
-                </div>
-                <p class="cardQuest">¿Cómo llegaste a nosotros?</p>
-                <select name="letra" id="letra"> 
-                    <option value="publi">Publicidad</option>
-                    <option value="home">Conocidos</option>
-                    <option value="other">Otros</option>
-                </select>
-                <div class="cardQuest">¿Te gustaría subscribirte a nuestro newsletter?
-                <input class="cardQuest" type="checkbox" name="acepta" value="1"></div>
-                <input type="submit" value="Completar">
-                <input type="reset" value="Borrar Todo">
-            </form>
-        </article>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div>
+            <a href="https://web.whatsapp.com/"> <img src="../img/iconos/whatsapp.png" class="iconoSocial" alt="whatsapp"></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/troglia_eventos/"> <img src="../img/iconos/instagram.png" class="iconoSocial" alt="instagram"></a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/fernando.troglia"> <img src="../img/iconos/facebook.png" class="iconoSocial" alt="facebook"></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UCX3o2hNexN7IPWji_pFGW6g"> <img src="../img/iconos/youtube.png" class="iconoSocial" alt="youtube"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-<footer>
-    <div>
-        <a href="https://web.whatsapp.com/"> <img src="../img/iconos/whatsapp.png" class="iconoSocial" alt="whatsapp"></a>
-    </div>
-    <div>
-        <a href="https://www.instagram.com/troglia_eventos/"> <img src="../img/iconos/instagram.png" class="iconoSocial" alt="instagram"></a>
-    </div>
-    <div>
-        <a href="https://www.facebook.com/fernando.troglia"> <img src="../img/iconos/facebook.png" class="iconoSocial" alt="facebook"></a>
-    </div>
-    <div>
-        <a href="https://www.youtube.com/channel/UCX3o2hNexN7IPWji_pFGW6g"> <img src="../img/iconos/youtube.png" class="iconoSocial" alt="youtube"></a>
-    </div>
-</footer>
 </html>

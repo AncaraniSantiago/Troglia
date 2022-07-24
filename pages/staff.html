@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>TROGLIA</title>
 </head>
 <body>
-    
     <header>
-        <a href="../index.html"><img src="../img/iconoTrogliaPng.png" class="iconoPrincipal" alt="icono logotipo TROGLIA"></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="staff.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../pages/historia.html">Historia</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/iconoTrogliaPng.png" class="iconoPrincipal" alt="icono logotipo TROGLIA"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="../img/iconos/menu.png" alt="menu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="staff.html">Nosotros</a>
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -34,9 +33,9 @@
             <h2 class="cardSecundaria">Tabajamos vinculados constantemente</h2>
         </div>
         <div class="nosotros">
-            <img class="nosotros" src="../img/staff2.jpg" alt="Fernando en escena">
+            <img class="nosotros" src="../img/staff2.png" alt="Fernando en escena">
             <img class="nosotros" src="../img/staff1.png" alt="Sebastian Chiabo en escena">
-            <img class="nosotros" src="../img/nosotros.jpg" alt="oficina moderna">
+            <img class="nosotros" src="../img/nosotros.png" alt="oficina moderna">
         </div>    
     </main>
 
@@ -54,5 +53,6 @@
             <a href="https://www.youtube.com/channel/UCX3o2hNexN7IPWji_pFGW6g"> <img src="../img/iconos/youtube.png" class="iconoSocial" alt="youtube"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
