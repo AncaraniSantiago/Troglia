@@ -1,0 +1,97 @@
+main{
+    grid-area: mainb;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    div{
+        h1, h2, h3{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            text-align: center;
+            padding: 1.5em;
+            width: 100%;
+        }
+        h1, h3{
+            color: $font1;
+            font-family: 'Inter', sans-serif;
+        }
+        h2{
+            color: $font2;
+            font-family: 'Inter', sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        .formulario{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            align-content: center;
+            padding: 1em;
+            margin-bottom: 2em;
+        }
+        .col-12{
+            margin: 1em;
+            display: flex;
+            justify-content: center;
+        }
+        .galeriaVideos{
+            display: flex;
+            padding: 2em;
+            gap: 3em;
+        }
+        .col-12{
+            margin: 1em;
+            display: flex;
+            align-content: center;
+        }
+        .divContenedor{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            align-content: space-between;
+        }
+    }
+    .formulario{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        align-content: center;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+    .form-check{
+        padding: 1em;
+        padding-left: 2em;
+    }
+    .galeriaFotos{
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        margin: 1em;
+    }
+    article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

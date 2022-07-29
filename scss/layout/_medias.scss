@@ -1,0 +1,24 @@
+@media screen and (max-width: 992px){
+    .nav-link{
+        display: flex;
+        width: 60%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .galeriaVideos{
+        flex-flow: column wrap;
+    }
+}    
+@media screen and (max-width: 540px){
+    main{
+        background-size: 130%;
+    }
+    .iconoSocial{
+        width: 3em;
+        height: 3em;
+    }
+    .nav-link{
+        width: 80%;
+    }
+}

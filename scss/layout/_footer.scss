@@ -1,0 +1,15 @@
+footer{
+    grid-area: foot;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1em;
+    background-color: $headFoot;
+    .iconoSocial{
+        margin: 5px;
+        width: 4em;
+        height: 4em;
+    }
+}
