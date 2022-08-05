@@ -169,7 +169,20 @@ footer {
   main {
     background-size: 130%; }
   .iconoSocial {
-    width: 3em;
-    height: 3em; }
+    width: 2em;
+    height: 2em; }
   .nav-link {
     width: 80%; } }
+
+@media screen and (max-width: 340px) {
+  div.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    div.container-fluid .navbar-toggler, div.container-fluid .navbar-brand {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center; }
+    div.container-fluid .navbar-brand {
+      padding: 1em;
+      margin: 0; } }
