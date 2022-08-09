@@ -14,7 +14,7 @@
     main{
         background-size: 130%;
     }
-    .iconoSocial{
+    footer .iconoSocial{
         width: 2em;
         height: 2em;
     }
@@ -23,6 +23,9 @@
     }
 }
 @media screen and (max-width: 340px){
+    footer{
+        flex-flow: column wrap;
+    }
     div.container-fluid{
         display: flex;
         flex-direction: column;
@@ -34,7 +37,7 @@
         }
         .navbar-brand{
             padding: 1em;
-            margin: 0;
+            margin: 1em;
         }
     }
 }

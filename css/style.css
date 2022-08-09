@@ -5,13 +5,12 @@
   box-sizing: border-box; }
 
 /*
-misFuentes
 font-family: 'Inter', sans-serif;
-font-family: 'Secular One', sans-serif;;
+font-family: 'Secular One', sans-serif;
 */
 body {
   display: grid;
-  grid-template-rows: 0.7fr auto 0.5fr;
+  grid-template-rows: 1fr auto 1fr;
   grid-template-areas: "head" "mainb" "foot";
   align-content: center;
   width: 100%; }
@@ -23,7 +22,7 @@ header {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 2em;
+  padding: 1em;
   background-color: #a1051f; }
   header nav {
     display: flex;
@@ -41,7 +40,7 @@ header {
       height: 5em; }
       header nav .iconoPrincipal:hover {
         transform: scale(1.1);
-        transition: all 0.8s; }
+        transition: all 0.7s; }
     header nav .iconoMenu {
       width: 3em;
       height: 3em; }
@@ -75,25 +74,21 @@ main {
   main div h1, main div h2, main div h3 {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5em;
-    width: 100%; }
-  main div h1, main div h3 {
+    padding: 0.7em;
+    width: 100%;
     color: #db114e;
-    font-family: 'Inter', sans-serif; }
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder; }
   main div h2 {
-    color: #3a3337;
-    font-family: 'Inter', sans-serif; }
+    font-weight: bold;
+    color: #3a3337; }
+  main div h3 {
+    font-weight: normal; }
   main div img {
     width: 100%; }
-  main div .formulario {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: center;
-    padding: 1em;
-    margin-bottom: 2em; }
   main div .col-12 {
     margin: 1em;
     display: flex;
@@ -102,44 +97,45 @@ main {
     display: flex;
     padding: 2em;
     gap: 3em; }
-  main div .col-12 {
-    margin: 1em;
-    display: flex;
-    align-content: center; }
   main div .divContenedor {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     align-content: space-between; }
+  main .imgPrincipal {
+    width: 80%; }
   main .formulario {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    justify-content: center;
     align-content: center;
     padding: 1em;
-    margin-bottom: 2em; }
+    margin: 2em 1em; }
   main .form-check {
     padding: 1em;
     padding-left: 2em; }
   main .galeriaFotos {
     display: flex;
-    width: 90%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 60%;
     justify-content: center;
     margin-bottom: 2em; }
   main .nosotros {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    width: 80%;
     padding: 1em;
     margin: 1em; }
   main article {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
+    flex-flow: row wrap;
+    align-items: center; }
+
+.mainStaff {
+  background-position: 50% 70%; }
 
 footer {
   grid-area: foot;
@@ -154,6 +150,9 @@ footer {
     margin: 5px;
     width: 4em;
     height: 4em; }
+    footer .iconoSocial:hover {
+      transform: scale(1.1);
+      transition: all 0.8s; }
 
 @media screen and (max-width: 992px) {
   .nav-link {
@@ -168,13 +167,15 @@ footer {
 @media screen and (max-width: 540px) {
   main {
     background-size: 130%; }
-  .iconoSocial {
+  footer .iconoSocial {
     width: 2em;
     height: 2em; }
   .nav-link {
     width: 80%; } }
 
 @media screen and (max-width: 340px) {
+  footer {
+    flex-flow: column wrap; }
   div.container-fluid {
     display: flex;
     flex-direction: column;
@@ -185,4 +186,4 @@ footer {
       align-content: center; }
     div.container-fluid .navbar-brand {
       padding: 1em;
-      margin: 0; } }
+      margin: 1em; } }

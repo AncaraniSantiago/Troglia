@@ -1,8 +1,6 @@
 footer{
     grid-area: foot;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    @include flexRow;
     justify-content: space-evenly;
     width: 100%;
     padding: 1em;
@@ -11,5 +9,9 @@ footer{
         margin: 5px;
         width: 4em;
         height: 4em;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.8s;
+        }
     }
 }

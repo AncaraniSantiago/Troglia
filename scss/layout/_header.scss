@@ -1,16 +1,12 @@
 header{
     grid-area: head;
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    @include flexRow;
     justify-content: space-around;
-    padding: 2em;
+    padding: 1em;
     background-color: $headFoot;
     nav{
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
+        @include flexRow;
         justify-content: end;
         width: 100%;
         .collapse{
@@ -25,7 +21,7 @@ header{
             height: 5em;
             &:hover{
                 transform: scale(1.1);
-                transition: all 0.8s;
+                transition: all 0.7s;
             }
         }
         .iconoMenu{
